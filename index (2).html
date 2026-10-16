@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Schulwahl Brixen – alle Oberschulen im Überblick, im Vergleich und im Test</title>
+  <meta name="description" content="Alle Oberschulen und Bildungswege in Brixen neutral erklärt, direkt vergleichbar – plus ein Interessentest, der zeigt, welche Schule zu dir passt.">
+  <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16181D" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23D63F6E'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='white'%3ESw%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="top">
+    <div class="top__inner">
+      <a class="brand" href="#uebersicht" aria-label="Schulwahl Brixen, zur Übersicht">
+        <span class="brand__tile" aria-hidden="true">Sw</span>
+        <span class="brand__name">Schulwahl Brixen</span>
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#uebersicht" data-nav="uebersicht">Übersicht</a>
+        <a href="#vergleich" data-nav="vergleich">Vergleich</a>
+        <a href="#test" data-nav="test">Test</a>
+        <a href="#methode" data-nav="methode">So funktioniert's</a>
+      </nav>
+    </div>
+  </header>
+  <nav class="tabbar" aria-label="Hauptnavigation mobil">
+    <a href="#uebersicht" data-nav="uebersicht"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2"/></svg>Schulen</a>
+    <a href="#vergleich" data-nav="vergleich"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h7M4 12h11M4 17h5"/><path d="M20 7h-3M20 12h-1M20 17h-7"/></svg>Vergleich</a>
+    <a href="#test" data-nav="test"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7z"/></svg>Test</a>
+    <a href="#methode" data-nav="methode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>Infos</a>
+  </nav>
+
+  <main id="main" tabindex="-1">
+    <section class="view" id="view-uebersicht" aria-labelledby="h-uebersicht"></section>
+    <section class="view" id="view-vergleich" aria-labelledby="h-vergleich" hidden></section>
+    <section class="view" id="view-test" aria-labelledby="h-test" hidden></section>
+    <section class="view" id="view-methode" aria-labelledby="h-methode" hidden></section>
+  </main>
+
+  <div class="drawer" id="drawer" hidden>
+    <div class="drawer__scrim" data-close></div>
+    <div class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title" tabindex="-1">
+      <button class="drawer__close" type="button" data-close aria-label="Schließen">×</button>
+      <div class="drawer__scroll">
+        <div class="drawer__handle" aria-hidden="true"></div>
+        <div id="drawer-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <p>Unabhängige Übersicht, nicht von den Schulen erstellt. Stand: <span data-stand></span>. Alle Angaben ohne Gewähr – bitte vor der Einschreibung auf den Seiten der Schulen prüfen.</p>
+    <p>Der Test läuft komplett in deinem Browser. Es werden keine Antworten gespeichert oder verschickt, und die Seite lädt nichts von Drittanbietern.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="tafeln.js"></script>
+  <script src="careers.js"></script>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
